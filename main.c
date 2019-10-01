@@ -11,10 +11,22 @@ int main(int argc, char *argv[]) {
 	scanf("%d", &input);
 	
 	if (input > 0)
-	 printf("£üx£ü = %d\n", input);
-	 
-	else
-	 printf("£üx£ü = %d\n", -input);
-	 	
+	{
+		printf("positive\n " );
+	}
+    else if (input < 0)
+    {
+    	printf("negative\n ");
+    	
+	}
+	else 
+	{
+		printf("zero\n ");
+	}
+	
+	
+	
+	
+
 	return 0;
 }
