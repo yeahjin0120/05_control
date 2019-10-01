@@ -7,14 +7,14 @@ int main(int argc, char *argv[]) {
 	
 	int input;
 	
-	printf("input a number :");
-	scanf ("%d", &input);
+	printf ("input a number : ");
+	scanf("%d", &input);
 	
-	if(input >0)
-	printf("positive\n");
-	
+	if (input > 0)
+	 printf("£üx£ü = %d\n", input);
+	 
 	else
-	printf("non-positive\n");
-	
+	 printf("£üx£ü = %d\n", -input);
+	 	
 	return 0;
 }
