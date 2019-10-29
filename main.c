@@ -4,30 +4,20 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
+	int num;
+	char c;
 	
-	int answer = 12;
-	int input;
-	int count=0;
+	printf("input a string: ");
 	
-	do
+	while ((c = getchar())!='\n')
+	
 	{
-		printf("input a number :");
-		scanf("%d", &input);
-		if( input < answer)
+		if (c <= '9' && c >= '0')
 		{
-			printf("low!\n");
-	    } 
-		else if( input > answer)
-		{
-			printf("high!\n");
-	    }	
-		count++;	
-		
-    }
-    
+			num++;
+		}
+	}
 	
-	while ( input != answer );
-	
-	printf("congratuation. trial : %i\n", count);
+	printf("%i\n", num);
 	return 0;
 }
